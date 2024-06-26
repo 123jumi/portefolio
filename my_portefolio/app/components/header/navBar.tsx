@@ -29,6 +29,7 @@ const NavigationList = styled.ul`
 
 const NavigationItem = styled.li`
 	padding: 0 20px;
+	list-style: none;
 `;
 
 const NavigationLink = styled.a`
