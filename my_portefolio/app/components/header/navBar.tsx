@@ -1,4 +1,4 @@
-// components/Header.tsx
+"use client";
 import styled from "styled-components";
 import Link from "next/link";
 
@@ -37,7 +37,7 @@ const NavigationLink = styled.a`
 	font-size: 1.5rem;
 `;
 
-const Header: React.FC = () => {
+export const NavBar: React.FC = () => {
 	return (
 		<StyledHeader>
 			<HeaderContainer>
@@ -72,5 +72,3 @@ const Header: React.FC = () => {
 		</StyledHeader>
 	);
 };
-
-export default Header;
