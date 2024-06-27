@@ -23,7 +23,7 @@ const NavigationList = styled.ul`
 	padding: 10px 0;
 	border-bottom: 0.1px solid var(--text-color, rgb(170, 184, 199));
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	white-space: nowrap;
 `;
 
