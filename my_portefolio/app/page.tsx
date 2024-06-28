@@ -2,14 +2,14 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { NavBar } from "./components/header/navBar";
 import { Hero } from "./components/hero/heroSection";
+import { Bio } from "./components/bio/bioSection";
 export default function Home() {
 	return (
 		<>
 			<NavBar />
 			<main className={styles.main}>
-				<div>
-					<Hero />
-				</div>
+				<Hero />
+				<Bio />
 
 				<div className={styles.center}>
 					<Image
