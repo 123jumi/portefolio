@@ -1,7 +1,6 @@
 "use client";
 import styled from "styled-components";
 
-// Styled components for each element
 const HeroSection = styled.section`
 	max-width: 100%;
 	margin: 300px 0;
@@ -49,6 +48,7 @@ export const Hero = () => {
 					jour afin de créer des sites et des applications web offrant une expérience
 					utilisateur captivante et des solutions techniques innovantes.
 				</Paragraph>
+				<p>. </p>
 			</HeroContainer>
 		</HeroSection>
 	);
