@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
 	position: fixed;
 	top: 3vh;
 	left: center;
-	background-color: rgba(5, 10, 11, 0.4);
+	background-color: rgba(5, 10, 11, 0.3);
 	z-index: 2;
 	display: flex;
 	justify-content: center;
@@ -21,7 +21,7 @@ const HeaderContainer = styled.div`
 const NavigationList = styled.ul`
 	display: flex;
 	padding: 10px 0;
-	border-bottom: 0.1px solid var(--text-color, rgb(170, 184, 199));
+	border-bottom: 0.1px solid var(--text-color);
 	align-items: center;
 	justify-content: space-around;
 	white-space: nowrap;
@@ -33,7 +33,7 @@ const NavigationItem = styled.li`
 `;
 
 const NavigationLink = styled.a`
-	color: rgb(170, 184, 199);
+	color: var(--text-color);
 	text-decoration: none;
 	font-size: 1.5rem;
 `;

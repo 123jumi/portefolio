@@ -18,21 +18,21 @@ const Title = styled.h1`
 	margin: 0 0 10px 0;
 	font-size: 3.5rem;
 	font-weight: 400;
-	color: rgb(170, 184, 199);
+	color: var(--text-color);
 `;
 
 const Subtitle = styled.h2`
 	margin: 0 0 20px 25px;
 	font-size: 2rem;
 	font-weight: 400;
-	color: rgb(170, 184, 199);
+	color: var(--skills-text-color);
 `;
 
 const Paragraph = styled.p`
 	font-size: 1.2rem;
 	margin: 0 0 0 50px;
 	line-height: 1.5;
-	color: rgb(170, 184, 199);
+	color: var(--skills-text-color);
 	border: none;
 	text-align: justify;
 `;
