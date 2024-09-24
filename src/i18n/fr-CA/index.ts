@@ -14,7 +14,7 @@ export const frCA = {
       }
     },
     home: {
-      title: 'Accueil',
+      title: 'Développeur web full-stack',
       heroText:
         'Ambitieux et passionné par le développement web, je suis déterminé à me perfectionner chaque jour afin de créer des sites et des applications web offrant une expérience utilisateur captivante et des solutions techniques innovantes.'
     },

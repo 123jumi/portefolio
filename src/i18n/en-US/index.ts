@@ -14,7 +14,7 @@ export const enUS = {
       }
     },
     home: {
-      title: 'Home',
+      title: 'Full-Stack Developer',
       heroText:
         'Ambitious and passionate about web development, I am determined to improve myself every day in order to create websites and web applications offering a captivating user experience and innovative technical solutions.'
     },
