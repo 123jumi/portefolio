@@ -4,6 +4,9 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
+     <div class="wrapper">
+    <HeroSection/>
+  </div>
     <TheWelcome />
   </main>
 </template>
