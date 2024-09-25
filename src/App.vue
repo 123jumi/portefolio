@@ -12,9 +12,6 @@ import HeroSection from './components/HeroSection.vue'
       <RouterLink to="/contact">Contact</RouterLink>
     </nav>
   </header>
-  <div class="wrapper">
-    <HeroSection />
-  </div>
   <Transition name="fade" mode="out-in">
     <RouterView />
   </Transition>
@@ -67,7 +64,6 @@ nav a:first-of-type
     display: flex
     place-items: flex-start
     flex-wrap: wrap
-
 
   nav
     text-align: center
