@@ -19,13 +19,16 @@ h1
   font-weight: 400
   font-size: 2rem
   text-align: left
-  padding: 2rem 0 0.5rem 0
+  justify-content: center
+  margin: 1rem 0
+  padding: auto
 
 h2
   font-weight: 300
   font-size: 1rem
-  padding-bottom:0.5rem
+  margin: 0 0 1rem 0
   text-align: right
+  justify-content: center
 
 h3
   font-size: 0.8rem
@@ -33,23 +36,24 @@ h3
 
 @media (min-width: 1024px)
   .hero
-    margin-left: 7%
+    padding-left: 7%
 
   h1, h2, h3
-    padding: 0
+    padding: 1rem
     text-align: left
-    max-width: 70%
+    max-width: 65%
 
   h1
     font-weight: 500
-    font-size: 2rem
+    font-size: 2.5rem
+    padding: 2rem 0
 
   h2
     margin: 1rem 0 1rem 3rem
     font-weight: 400
-    font-size: 1.8rem
+    font-size: 2rem
 
   h3
     margin: 1rem 0 2rem 6rem
-    font-size: 1.2rem
+    font-size: 1.5rem
 </style>

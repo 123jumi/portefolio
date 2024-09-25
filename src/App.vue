@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HeroSection from './components/HeroSection.vue'
 </script>
 
 <template>
@@ -20,28 +19,27 @@ import HeroSection from './components/HeroSection.vue'
 <style scoped lang="sass">
 header
   line-height: 1.5
-  max-height: 100vh
+  max-height: 20vh
 
 nav
   width: 100%
-  font-size: 12px
+  padding: auto
+  font-size: 0.6rem
   text-align: center
   margin-top: 2rem
 
 
 nav a.router-link-exact-active
   color: var(--color-text)
+
 .fade-enter-active, .fade-leave-active
   transition: opacity 0.8s ease
-
 
 .fade-enter, .fade-leave-to
   opacity: 0
 
-
 nav a.router-link-exact-active:hover
   background-color: transparent
-
 
 nav a
   display: inline-block
@@ -58,6 +56,7 @@ nav a:first-of-type
     display: flex
     place-items: center
     padding-right: calc(var(--section-gap) / 2)
+    margin-bottom: 2rem
 
 
   header .wrapper
@@ -67,7 +66,7 @@ nav a:first-of-type
 
   nav
     text-align: center
-    font-size: 1rem
+    font-size: 1.5rem
     padding: 1rem 0
     margin-bottom: 1rem
 </style>
