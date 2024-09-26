@@ -6,8 +6,6 @@ import HeroSection from '../components/HeroSection.vue'
   <main>
     <div class="wrapper">
       <HeroSection />
-    </div>
-    <div class="about">
       <h1>This is an about page</h1>
     </div>
   </main>

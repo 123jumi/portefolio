@@ -5,6 +5,7 @@ export const frCA = {
       about: 'À propos',
       contact: 'Contact',
       projects: 'Projets',
+      changeLocale: 'EN',
       top: 'Retour en haut'
     },
     router: {

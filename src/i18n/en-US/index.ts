@@ -5,6 +5,7 @@ export const enUS = {
       about: 'About',
       contact: 'Contact',
       projects: 'Projects',
+      changeLocale: 'FR',
       top: 'back to top'
     },
     router: {
