@@ -2,16 +2,12 @@
 import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
-const { t } = useI18n()
-const { locale } = useI18n()
 
-const toggleLang = computed(() => {
-  return locale.value === 'en-US' ? 'FR' : 'EN'
-})
+const { t, locale } = useI18n()
 
-const changeLocale = () => {
-  locale.value = locale.value === 'en-US' ? 'fr-CA' : 'en-US'
-}
+const toggleLang = computed(() => (locale.value === 'en-US' ? 'FR' : 'EN'))
+
+const changeLocale = () => (locale.value = locale.value === 'en-US' ? 'fr-CA' : 'en-US')
 </script>
 
 <template>
@@ -27,8 +23,7 @@ const changeLocale = () => {
 <style scoped lang="sass">
 nav
   width: 100%
-  padding: auto
-  font-size: 0.6rem
+  font-size: 0.5rem
   text-align: center
   margin-top: 2rem
 
@@ -40,11 +35,12 @@ nav a.router-link-exact-active:hover
 
 nav a
   display: inline-block
-  padding: 0 1rem
+  padding: 0 0.8rem
   border-left: 1px solid var(--color-border)
 
 nav a:first-of-type
   border: 0
+
 .lang
   padding:0 1rem
   border-radius: 0
@@ -59,4 +55,7 @@ nav a:first-of-type
     font-size: 1.5rem
     padding: 1rem 0
     margin-bottom: 1rem
+
+  nav a
+    padding: 1rem
 </style>
