@@ -10,7 +10,7 @@ $my-info: transparent
 $theme-colors: ("primary": $my-primary, "success": $my-success, "secondary": $my-secondary,"tertiary":$my-tertiary ,"warning": $my-warning, "danger": $my-danger, "info": $my-info)
 
 @import 'node_modules/bootstrap/scss/bootstrap'
-
+@import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 :root
   --vt-c-white: #ffffff
   --vt-c-white-soft: #f8f8f8
@@ -78,7 +78,9 @@ body
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-
+.flex-column
+  display: flex
+  flex-direction: column
 .btn
   color: white
   cursor: pointer

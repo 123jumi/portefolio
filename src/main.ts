@@ -7,7 +7,7 @@ import { createBootstrap } from 'bootstrap-vue-next'
 import App from './App.vue'
 import router from './router'
 import '@/assets/sass/styles.sass'
-import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
+
 const app = createApp(App)
 
 app.use(createPinia())
