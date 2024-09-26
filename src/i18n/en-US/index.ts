@@ -4,6 +4,7 @@ export const enUS = {
       home: 'Home',
       about: 'About',
       contact: 'Contact',
+      projects: 'Projects',
       top: 'back to top'
     },
     router: {

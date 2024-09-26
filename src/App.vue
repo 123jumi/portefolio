@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/projects">Projects</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
+      <RouterLink to="/">{{ t('message.nav.home') }}</RouterLink>
+      <RouterLink to="/about">{{ t('message.nav.about') }}</RouterLink>
+      <RouterLink to="/projects">{{ t('message.nav.projects') }}</RouterLink>
+      <RouterLink to="/contact">{{ t('message.nav.contact') }}</RouterLink>
     </nav>
   </header>
   <Transition name="fade" mode="out-in">
@@ -28,15 +30,8 @@ nav
   text-align: center
   margin-top: 2rem
 
-
 nav a.router-link-exact-active
   color: var(--color-text)
-
-.fade-enter-active, .fade-leave-active
-  transition: opacity 0.8s ease
-
-.fade-enter, .fade-leave-to
-  opacity: 0
 
 nav a.router-link-exact-active:hover
   background-color: transparent
@@ -46,10 +41,14 @@ nav a
   padding: 0 1rem
   border-left: 1px solid var(--color-border)
 
-
 nav a:first-of-type
   border: 0
 
+.fade-enter-active, .fade-leave-active
+  transition: opacity 0.8s ease
+
+.fade-enter, .fade-leave-to
+  opacity: 0
 
 @media (min-width: 1024px)
   header
@@ -57,12 +56,6 @@ nav a:first-of-type
     place-items: center
     padding-right: calc(var(--section-gap) / 2)
     margin-bottom: 2rem
-
-
-  header .wrapper
-    display: flex
-    place-items: flex-start
-    flex-wrap: wrap
 
   nav
     text-align: center

@@ -67,7 +67,6 @@ $theme-colors: ("primary": $my-primary, "success": $my-success, "secondary": $my
 
 body
   min-height: 100vh
-  
   color: var(--color-text)
   background-image: url('src/assets/images/mulyadi-hJfM4pXoVbQ-unsplash.jpg')
   background-size: cover
@@ -141,12 +140,14 @@ body
   @media (min-width: 1024px)
     padding: 2rem 5rem
 
-a,
-.color
+a
   text-decoration: none
   color: map-get($theme-colors, "primary")
   transition: 0.4s
   padding: 3px
+
+.color-primary
+  color: map-get($theme-colors, "primary")
 
   @media (hover: hover)
     &:hover

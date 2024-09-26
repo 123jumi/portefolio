@@ -6,7 +6,7 @@ const { t } = useI18n()
 
 <template>
   <BContainer class="hero">
-    <h1 class="color">Julien Minville</h1>
+    <h1 class="color-primary">Julien Minville</h1>
     <h2>{{ t('message.home.title') }}</h2>
     <h3>
       {{ t('message.home.heroText') }}
