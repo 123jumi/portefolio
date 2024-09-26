@@ -23,6 +23,8 @@ h1
   margin: 1rem 0
   padding: auto
 
+h1:hover
+  background-color: none
 h2
   font-weight: 300
   font-size: 1rem
