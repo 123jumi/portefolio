@@ -8,7 +8,7 @@ import NavBar from './components/nav-bar/NavBar.vue'
     <NavBar />
   </header>
   <Transition name="fade" mode="out-in">
-    <RouterView />
+    <RouterView :key="$i18n.locale" />
   </Transition>
 </template>
 
@@ -18,7 +18,7 @@ header
   max-height: 20vh
 
 .fade-enter-active, .fade-leave-active
-  transition: opacity 0.8s ease
+  transition: opacity 0.6s ease
 
 .fade-enter, .fade-leave-to
   opacity: 0
