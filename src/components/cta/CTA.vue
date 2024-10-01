@@ -1,21 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { reactive } from 'vue'
 
-const form = ref({
+const form = reactive({
   name: '',
   email: '',
   message: ''
 })
 const onSubmit = (event: Event) => {
   event.preventDefault()
-  console.log(form.value)
+  console.log(form)
 }
 const onReset = () => {
-  form.value = {
-    name: '',
-    email: '',
-    message: ''
-  }
+  form.email = ''
+  form.name = ''
+  form.message = ''
 }
 </script>
 
